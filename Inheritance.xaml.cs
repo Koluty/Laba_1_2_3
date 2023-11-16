@@ -26,12 +26,19 @@ namespace Laba_2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Express_Bus bus;
-            int n_passenger = Convert.ToInt32(Number_Passenger.Text);
-            double speed = Convert.ToDouble(Speed.Text);
-            double price_ticket = Convert.ToDouble(Price_ticket.Text);
-            bus = new Express_Bus(n_passenger, price_ticket, Brand.Text, speed);
-            total_price.Content = bus.total_price_seats();
+            try
+            {
+                Express_Bus bus;
+                int n_passenger = Convert.ToInt32(Number_Passenger.Text);
+                double speed = Convert.ToDouble(Speed.Text);
+                double price_ticket = Convert.ToDouble(Price_ticket.Text);
+                bus = new Express_Bus(n_passenger, price_ticket, Brand.Text, speed);
+                total_price.Content = bus.total_price_seats();
+            }
+            catch
+            {
+                MessageBox.Show("Помилка при введенні даних");
+            }
         }
     }
 }
