@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Laba_2"
         mc:Ignorable="d"
-        Title="Inheritance" Height="450" Width="800">
+        Title="Inheritance" Height="300" Width="400">
     <Grid>
         <TextBox x:Name="Brand" HorizontalAlignment="Left" Margin="160,4,0,0" TextWrapping="Wrap" Text="ISUZU" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Bahnschrift"/>
         <Label Content="Марка автобуса" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
@@ -20,6 +20,7 @@
         <Label Content="Вартість усіх місць = " HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <Label x:Name="total_price" HorizontalAlignment="Left" Margin="220,120,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <Button Content="Обрахувати" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Height="40" Width="140" FontSize="18" FontFamily="Bahnschrift" Click="Button_Click"/>
+        <Button Content="Закрити" HorizontalAlignment="Left" Margin="180,160,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="140" FontFamily="Bahnschrift" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

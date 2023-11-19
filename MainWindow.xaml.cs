@@ -59,11 +59,18 @@ namespace Laba_2
             }
             catch { MessageBox.Show("Помилка при введенні даних"); }
         }
-
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var InheritanceWindow = new Inheritance();
             InheritanceWindow.Show();
+            this.Hide();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            var Abstract = new Abstract();
+            Abstract.Show();
+            this.Hide();
         }
     }
 }

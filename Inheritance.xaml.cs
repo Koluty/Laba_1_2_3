@@ -40,5 +40,12 @@ namespace Laba_2
                 MessageBox.Show("Помилка при введенні даних");
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var mainWindow = Application.Current.MainWindow;
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

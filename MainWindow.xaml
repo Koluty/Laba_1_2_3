@@ -7,9 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="660" Width="1200">
     <Grid>
-        <Menu Height="25" Width="100" VerticalAlignment="Top" Margin="10,10,1090,0">
-            <MenuItem Header="Спадкування" Click="MenuItem_Click" Height="24" Width="100" FontSize="12" FontFamily="Bahnschrift"></MenuItem>
-        </Menu>
+        
         <Label Content="Введіть координати лівої верхньої вершини прямокутника" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift"/>
         <TextBox x:Name="x1" HorizontalAlignment="Left" Margin="50,75,0,0" TextWrapping="Wrap" Text="-5" VerticalAlignment="Top" Width="120" FontSize="18" FontFamily="Bahnschrift"/>
         <Label Content="x = " HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
@@ -70,6 +68,8 @@
 
         <Label x:Name="min_max_rand_x2" HorizontalAlignment="Left" Margin="800,184,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <Label x:Name="min_max_rand_y2" HorizontalAlignment="Left" Margin="800,224,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Button Content="Спадкування" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift" Click="Button_Click_1"/>
+        <Button Content="Абстракція" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" FontSize="18" FontFamily="Bahnschrift" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
