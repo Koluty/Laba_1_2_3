@@ -55,6 +55,23 @@ namespace Laba_2
             {
                 listBox_GUI.Items.Add(a[i].Show() + " Ціна = " + a[i].CalculateCost().ToString());
             }
+
+            count = 0;
+            double totalCost = 0;
+            for (int i = 0; i < numberWardrobe; i++)
+            {
+                totalCost += a[count].CalculateCost();
+                count++;
+            }
+            Average_Wardrobe.Content = (totalCost / numberWardrobe).ToString();
+
+            totalCost = 0;
+            for (int i = 0; i < numberSofa; i++)
+            {
+                totalCost += a[count].CalculateCost();
+                count++;
+            }
+            Average_Sofa.Content = (totalCost / numberSofa).ToString();
         }
     }
 }

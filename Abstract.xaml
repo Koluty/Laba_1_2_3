@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Laba_2"
         mc:Ignorable="d"
-        Title="Abstract" Height="450" Width="800">
+        Title="Abstract" Height="500" Width="800">
     <Grid>
         <Button Content="Закрити" HorizontalAlignment="Left" Margin="640,10,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="140" FontFamily="Bahnschrift" Click="Button_Click_1"/>
         <Button Content="Обрахувати" HorizontalAlignment="Left" Margin="480,10,0,0" VerticalAlignment="Top" FontSize="18" Height="40" Width="140" FontFamily="Bahnschrift" Click="Button_Click"/>
@@ -13,7 +13,11 @@
         <Label Content="Кількість диванів" HorizontalAlignment="Left" Margin="210,15,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
         <TextBox x:Name="Wardrobe_GUI" HorizontalAlignment="Left" Margin="140,20,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="70" FontFamily="Bahnschrift" FontSize="18"/>
         <TextBox x:Name ="Sofa_GUI" HorizontalAlignment="Left" Margin="370,20,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top" Width="70" FontFamily="Bahnschrift" FontSize="18"/>
-        <ListBox x:Name="listBox_GUI" FontFamily="Bahnschrift" FontSize="18" Margin="0,60,0,10"/>
+        <ListBox x:Name="listBox_GUI" FontFamily="Bahnschrift" FontSize="18" Margin="0,60,0,70"/>
+        <Label Content="Середня вартість шаф =" HorizontalAlignment="Left" Margin="10,425,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="Average_Wardrobe" HorizontalAlignment="Left" Margin="230,425,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label Content="Середня вартість шаф =" HorizontalAlignment="Center" Margin="0,425,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
+        <Label x:Name="Average_Sofa" HorizontalAlignment="Left" Margin="520,425,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift" FontSize="18"/>
 
     </Grid>
 </Window>
